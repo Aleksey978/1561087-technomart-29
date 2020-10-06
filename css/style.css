@@ -78,17 +78,37 @@ a {
   width: 270px;
   margin: 0;
   padding: 0;
-  border: solid red;
-  /* margin-left: 60px; */
+  margin-left: 93px;
+  /* text-align: center; */
+  margin-top: 25px;
+}
+.phone-address{
+  padding: 0;
+  margin: 0;
+}
+
+.phone::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  background-image: url("img/Shape.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .phone{
   padding: 5px 45px 5px 74px;
   outline: solid white;
-  outline-offset: 3px;
+  outline-offset: -3px;
   font-family: "Cuprum";
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  position: relative;
+}
+.address-head{
+  font-size: 14px;
+  margin-top: 8px;
 }
 .menu-list{
   display: flex;

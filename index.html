@@ -3,24 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="css/normalize.css">
  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
 <header class="main-header">
   <section class="header-row">
-    <div class="container">
-      <ul class="menu-list">
-        <li class="spisok"><a href="index.html">
-          <p><img class="button-main" src="img\logo-technomart.png" width="108" height="18" alt="logo"></p>
-        </a>
-        </li>
-        <li class="spisok"><input type="search" name="search" class="search"></form></li>
-        <li class="spisok bookmarks"><a href="#">Закладки</a></li>
-        <li class="spisok basket"><a href="#">Корзина</a></li>
-        <li class="button-arrange spisok"><a href="#">Оформить заказ</a></li>
-      </ul>
+    <div class="main-container header-row-nav">
+        <a class="main-button" href="index.html">Техномарт</a>
+        <form class="header-search-form" action="http://echo.htmlacademy.ru/">
+        <input type="search" name="search" class="search"></form>
+        <a class="Bookmarks" href="#">Закладки: 0</a>
+        <a class="basket" href="#">Корзина: 0</a>
+      <a class="order"href="#">Оформить заказ</a>
     </div>
   </section>
   <div class="header-content-block">
@@ -35,8 +32,8 @@
         </ul>
       </div>
   <div class="user-nav-block">
-      <a class="user-button" href="#">вход</a>
-      <a class="user-button" href="#">регистрация</a>
+      <a class="user-button come" href="#">Войти</a>
+      <a class="user-button registration" href="#">Регистрация</a>
     </section>
   </div>
 </div>
@@ -59,32 +56,37 @@
     <section class="main-content">
       <div class="block materials">
         <h3>Материалы</h3><a href="blank.html">на любой вкус</a>
+        <img class="main-image" src="img/icon-1.png" alt="basket">
       </div>
       <div class="block instrument">
         <h3>Инструмент</h3><div class="button-main-content">
           <a href="blank.html">на все случаи</a>
+          <img class="main-image" src="img/icon-2.png" alt="drill">
         </div>
       </div>
       <div class="block Technics">
         <h3>Техника</h3><a href="blank.html">для стройки</a>
+        <img class="main-image" src="img/icon-3.png" alt="tract">
       </div>
       <div class="block discounts">
         <h3>Скидки 50%</h3><a href="blank.html">на 350 товаров</a>
+        <img class="main-image" src="img/icon-4.png" alt="basket">
       </div>
       <div class="block delivery-main">
         <h3>Доставка</h3><a href="blank.html">бесплатно</a>
+          <img class="main-image" src="img/icon-5.png" alt="trac">
       </div>
       <div class="catalog">
         <h2>перфораторы</h2>
-        <p>настоящие мужские игрушки</p>
-      <a class="button" href="#">открыть каталог</a>
+        <p>Настоящие мужские игрушки</p>
+      <a class="button button-catalog" href="#">открыть каталог</a>
       </div>
+    </section>
     </div>
-  </section>
     <div>
     <section class="popular-goods">
       <div class="product-list-open">
-        <p>популярные товары</p>
+        <p>популярные товары:</p>
         <a class="button"  href="#">все популярные товары</a>
       </div>
           <div class="b9000">
@@ -193,6 +195,7 @@
       <a class="button" href="#">Заблудились? напишите нам</a>
     </section>
   </div>
+  </main>
   <footer class="page-footer">
       <div class="footer-navigation">
         <section class="footer-nav main-container">
@@ -227,6 +230,5 @@
         </p>
       </section>
   </footer>
-</main>
 </body>
 </html>

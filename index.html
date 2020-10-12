@@ -101,12 +101,14 @@
           </div>
           </div>
             <div class="b3000 product">
-              <a class="bosch-3000" href="#">
-                <p>
-                  <img  src="img/BFG 3000.png" width="127" height="112" alt="BFG 9000">
-                </p>
-              </a>
-              <div class="corner-ribbon">new</div>
+              <div class="item-img">
+                <img  src="img/BFG 3000.png" width="127" height="112" alt="BFG 9000">
+                <div class="actions">
+                  <a class="buy" href="#">Купить</a>
+                  <a class="bookmark" href="#">В закладки</a>
+                </div>
+                <div class="corner-ribbon">new</div>
+              </div>
             <div class="description">
               <h3>Перфоратор BOSCH<br> BFG 3000</h3>
               <p class="crossed-out"><S>22500 P.</S></p>
@@ -114,11 +116,13 @@
             </div>
             </div>
           <div class="b6000 product">
-            <a href="#">
-              <p>
-                <img src="img/BFG 6000.png" width="144" height="128" alt="BFG 6000">
-              </p>
-            </a>
+            <div class="item-img">
+              <img src="img/BFG 6000.png" width="144" height="128" alt="BFG 6000">
+              <div class="actions">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+            </div>
             <div class="description">
               <h3>Перфоратор BOSCH<br> BFG 6000</h3>
               <p class="crossed-out"><S>30500 P.</S></p>
@@ -126,11 +130,13 @@
             </div>
           </div>
           <div class="b2000 product">
-            <a href="#">
-              <p>
-                <img src="img/BFG 2000.png" width="127" height="112" alt="BFG 2000">
-              </p>
-            </a>
+            <div class="item-img">
+              <img src="img/BFG 2000.png" width="127" height="112" alt="BFG 2000">
+              <div class="actions">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+            </div>
             <div class="corner-ribbon">new</div>
             <div class="description">
               <h3>Перфоратор BOSCH<br> BFG 2000</h3>
@@ -258,3 +264,27 @@
   </footer>
 </body>
 </html>
+<section class="modal modal-login">
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label class="name-user" for="name">Имя:</label>
+      <input class="name-user" id="name" type="name" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label class="login-user" for="login-login">Ваш e-mail:</label>
+      <input class="login-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+    </p>
+    <p>
+      <label class="text-of-the-letter" for="text">Текст письма:</label>
+      <input class="text-of-the-letter" id="text" type="text" name="text" placeholder="В свободной форме">
+    </p>
+    <button class="button" type="submit">отправить</button>
+    <button class="modal-close" type="button">Закрыть</button>
+  </form>
+</section>
+
+<section class="modal modal-map">
+  <h2>Как до нас добраться</h2>
+  <!-- Здесь будет карта -->
+  <button type="button">Закрыть</button>
+</section>

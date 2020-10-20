@@ -57,6 +57,10 @@ img {
   max-width: 100%;
   height: auto;
   }
+p, h2{
+  margin: 0;
+  padding: 0;
+}
 .main-container{
  width: 940px;
  margin: 0 auto;
@@ -539,17 +543,39 @@ color: var(--basic-white);
 }
 .catalog-item{
   z-index: 1;
-  position: relative;
+  position: absolute;
+  height: 266px;
+  width: 620px;
 }
 .catalog-img{
   position: absolute;
   z-index: -1;
 }
-.catalog-navigation{
-  position: absolute;
-}
 .perf{
   z-index: 2;
+}
+.drill-slide{
+  position: absolute;
+  z-index: 1;
+}
+.catalog-prev{
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+  border:0;
+  background: none;
+  left: 10px;
+  bottom: -170px;
+}
+.catalog-next{
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+  border:0;
+  background: none;
+  left: 580px;
+  bottom: -170px;
+  transform: rotate(180deg);
 }
 .slide h2{
   font-size: 36px;
@@ -571,7 +597,7 @@ color: var(--basic-white);
   font-size: 14px;
   text-transform: uppercase;
   line-height: 38px;
-  margin-top: 112px;
+  margin-top: 160px;
   margin-left: 25px;
   width: 192px;
   height: 38px;
@@ -584,6 +610,37 @@ color: var(--basic-white);
 .button-catalog:active{
   background-color: #BA2732;;
 }
+.catalog-navigation{
+  position: relative;
+}
+.catalog-dots{
+  position: relative;
+}
+.catalog-dot{
+  z-index: 3;
+  position: absolute;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  left: 300px;
+  top:240px;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active-btn{
+  background-color: red;
+  border: 3px solid white;
+  outline: 0;
+}
+.active{
+  margin-left: 10px;
+}
+.perf-slide{
+  z-index: 1;
+}
+
+
 
 .popular-goods{
   display: grid;

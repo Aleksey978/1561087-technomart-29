@@ -18,8 +18,12 @@
               <input type="text" id="header-search" placeholder="Поиск:">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
             </form>
-        <a class="Bookmarks" href="#">Закладки: 0</a>
-        <a class="basket-head" href="#">Корзина: 0</a>
+        <a class="Bookmarks" href="#">Закладки:
+           <span>0</span>
+        </a>
+        <a class="basket-head" href="#">Корзина:
+           <span>0</span>
+         </a>
       <a class="order"href="#">Оформить заказ</a>
     </div>
   </section>
@@ -37,8 +41,8 @@
   <div class="user-nav-block">
       <a class="user-button come" href="#">Войти</a>
       <a class="user-button registration" href="#">Регистрация</a>
+      </div>
     </section>
-  </div>
 </div>
 <section>
   <nav class="main-nav main-container">
@@ -85,10 +89,10 @@
 <img src="img/perf-slide.jpg" alt="">
     </div>
     <div class="catalog-title">
-    перфораторы
+    <h2>перфораторы</h2>
     </div>
     <div class="catalog-text">
-    Для настоящих мужчин
+    <p>Настоящие мужские игрушки</p>
     </div>
     <div class="catalog-btn">
     <a href="#" class="button-catalog">открыть каталог</a>
@@ -101,7 +105,9 @@
     <div class="catalog-title">
       <h2>Дрели</h2>
     </div>
-    <div class="catalog-text">на радость соседям</div>
+    <div class="catalog-text">
+      <p>Соседям на радость!</p>
+    </div>
     <div class="catalog-btn"><a href="#" class="button-catalog">открыть каталог</a></div>
   </div>
 </div>
@@ -115,7 +121,7 @@
 </div>
 <div class="catalog-dots">
   <button class="catalog-dot disabled"></button>
-  <button class="catalog-dot active"></button>
+  <button class="catalog-dot active active-btn"></button>
 </div>
 </div>
     </section>
@@ -135,7 +141,7 @@
           <div class="description">
             <h3>Перфоратор BOSCH<br> BFG 9000</h3>
             <p class="crossed-out"><S>32550 P.</S></p>
-            <button class="button" type="button">25500 ₽</button>
+            <button class="button" type="button">25500 P.</button>
           </div>
           </div>
             <div class="b3000 product">
@@ -150,7 +156,7 @@
             <div class="description">
               <h3>Перфоратор BOSCH<br> BFG 3000</h3>
               <p class="crossed-out"><S>22500 P.</S></p>
-              <button class="button" type="button">15500 ₽</button>
+              <button class="button" type="button">15500 P.</button>
             </div>
             </div>
           <div class="b6000 product">
@@ -164,7 +170,7 @@
             <div class="description">
               <h3>Перфоратор BOSCH<br> BFG 6000</h3>
               <p class="crossed-out"><S>30500 P.</S></p>
-            <button class="button" type="button">25500 ₽</button>
+            <button class="button" type="button">25500 P.</button>
             </div>
           </div>
           <div class="b2000 product">
@@ -178,14 +184,14 @@
             <div class="corner-ribbon">new</div>
             <div class="description">
               <h3>Перфоратор BOSCH<br> BFG 2000</h3>
-              <button class="button button-2000" type="button">12500 ₽</button>
+              <button class="button button-2000" type="button">12500 P.</button>
             </div>
           </div>
     </section>
   <div class="popular-manufacturers main-container">
     <section class="popular-manufacturers-list">
     <p>Популярные производители:</p>
-    <a class="button-popular-goods" href="#">все производители</a>
+    <a class="button-popular-goods button-manufacturers" href="#">все производители</a>
   </section>
   <section class="manufacturers">
     <a href="#"><img src="img/bosch.png" alt="bosch"></a>
@@ -206,7 +212,7 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <ul class="nav-service">
-            <li><button class="nav-section delivery-btn" type="button" autofocus>Доставка</button></li>
+            <li><button class="nav-section delivery-btn nav-section-active" type="button">Доставка</button></li>
             <li><button class="nav-section Warranty-btn" type="button">Гарантия</button></li>
             <li><button class="nav-section credit-btn" type="button">Кредит</button></li>
           </ul>
@@ -257,7 +263,7 @@
       <p>Вы можете забрать товар сами, <br>
         заехав в наш офис:</p>
       <img class="map" src="img/map.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158">
-      <a class="button-address" href="#">Заблудились? напишите нам</a>
+      <a class="button-address" href="#">Заблудились? напишите нам!</a>
     </section>
   </div>
   </main>
@@ -283,7 +289,7 @@
       </div>
       <section class="footer-info main-container">
         <p>© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
-      <section class="footer-social">
+      <div class="footer-social">
       <ul class="social">
         <li>
           <a class="social-button" href="#">
@@ -304,7 +310,7 @@
           </a>
         </li>
       </ul>
-    </section>
+    </div>
         <div class="Feedback-developed">
           <div class="Feedback">
             <p>Обратная связь</p>

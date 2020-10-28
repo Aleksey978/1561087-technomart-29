@@ -90,7 +90,7 @@ p, h2{
   box-sizing: border-box;
   position: relative;
   display: block;
-  padding: 12px 55px 17px;
+  padding: 12px 56px 17px;
   font-size: 24px;
   font-family: "Cuprum", sans-serif;
   color: #ffffff;
@@ -99,6 +99,7 @@ p, h2{
   cursor: pointer;
   margin-bottom: -5px;
   height: 47px;
+  width: 220px;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 .main-button:focus {
@@ -138,36 +139,13 @@ p, h2{
     width: 270px;
     margin: 0;
     padding: 0;
-
-    /* padding-left: 50px; */
-    /* color: #ffffff; */
 }
 
-/* .header-search-form::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 17px;
 
-    width: 17px;
-    height: 17px;
-    margin-top: 2px;
-
-    background-image: url("../img/svg/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.3;
-    transition: 200ms all;
-}
-
-.header-search-form:hover::after,
-.header-search-form:focus::after {
-    opacity: 1;
-} */
 .header-search-form input {
     width: 220px;
     min-height: 40px;
-    padding-left: 43px;
+    padding-left: 42px;
     color: inherit;
     background: var(--basic-dark-blue);
     border: none;
@@ -197,7 +175,7 @@ p, h2{
 
 .header-search-form svg {
     position: absolute;
-    top: 17px;
+    top: 19px;
     left: 17px;
     margin-top: -7px;
 }
@@ -211,42 +189,46 @@ p, h2{
     opacity: 1;
     fill: #ee3643;
 }
-.Bookmarks{
-  display: block;
-  padding: 9px 24px 9px 43px ;
+.bookmarks{
+  display: flex;
+  padding: 9px 0px 8px 43px;
+  /* width: 142px; */
+  /* padding-left: 50px; */
   position: relative;
 }
-.Bookmarks::before{
+.bookmarks::before{
   content:"";
   position: absolute;
   width: 14px;
   height: 17px;
-  top: 13px;
+  top: 12px;
   left: 20px;
+  line-height: 24px;
   background-image: url("../img/Shape-Bookmarks.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
 }
-.Bookmarks:active::before,
-.Bookmarks:focus::before,
-.Bookmarks:hover::before{
+.bookmarks:active::before,
+.bookmarks:focus::before,
+.bookmarks:hover::before{
     opacity: 1;
 }
 
 .basket-head{
-  display: block;
-  padding-left: 23px;
-  margin-left: 26px;
+  display: flex;
+  padding: 9px 0px 8px 74px ;
+  margin-right: 27px;
   position: relative;
+
 }
 .basket-head::before{
   content:"";
   position: absolute;
   width: 14px;
-  height: 17px;
-  top: 4px;
-  left: 1px;
+  height: 18px;
+  top: 12px;
+  left: 51px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -260,7 +242,7 @@ p, h2{
 .order{
   display: block;
   padding: 9px 16px 9px 19px;
-  margin-left: 28px;
+  margin-left: 0px;
   background-color: var(--basic-green);
 }
 .order:hover{
@@ -336,7 +318,7 @@ p, h2{
 }
 .user-nav-block{
   margin-left: 72px;
-  margin-top: 15px;
+  margin-top: 14px;
 }
 .user-button{
   font-size: 21px;
@@ -350,7 +332,7 @@ p, h2{
 }
 .come{
   position: relative;
-  padding: 11px 27px 11px 45px;
+  padding: 10px 27px 10px 45px;
 }
 .come:hover, .registration:hover{
   color: #EE3643;
@@ -1109,11 +1091,11 @@ color: var(--basic-white);
   height: 68px;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
-.ssilki{
+.footer-nav-item{
   grid-column: 2/4;
   grid-row: 1/2;
 }
-.ssilki{
+.footer-nav-item{
   display: flex;
   justify-content: space-between;
   font-size: 18px;
@@ -1684,6 +1666,7 @@ color: #000000;
 .modal {
   display: none;
   position: fixed;
+  z-index: 3;
   top: 0;
   right: 0;
   bottom: 0;

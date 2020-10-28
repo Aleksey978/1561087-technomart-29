@@ -4,8 +4,9 @@ var popupCatalog = document.querySelector(".modal-buy"); // Всплывающе
 var close = popupCatalog.querySelector(".modal-close"); // Кнопка закрытия всплывающего окна
 var addCart = document.querySelector(".basket-head"); // Корзина, нужно будет добавить класс
 var amountBascet = document.querySelector(".amount-basket"); // span в корзине для коррекции числа
-var amountBookmarks = document.querySelectorAll(".amount-Bookmarks");
+var amountBookmarks = document.querySelector(".amount-bookmarks");
 var myVar = 0; // число которое будет прописывать в корзине
+var myVarBook = 0;
 
 
 
@@ -34,6 +35,6 @@ linkCatalog.forEach(function (item) { // Перебираем массив из 
   linkBookmark.forEach (function (item) {
   item.addEventListener("click", function (evt) {
   evt.preventDefault();
-  myVar++; // Обновляем переменную
-  amountBookmarks.textContent = myVar;
+  myVarBook++; // Обновляем переменную
+  amountBookmarks.textContent = myVarBook;
 })});

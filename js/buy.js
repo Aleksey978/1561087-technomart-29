@@ -31,10 +31,9 @@ linkCatalog.forEach(function (item) { // Перебираем массив из 
 		}
 	});
 });
-linkBookmark.forEach(function (item) {
+  linkBookmark.forEach (function (item) {
   item.addEventListener("click", function (evt) {
   evt.preventDefault();
   myVar++; // Обновляем переменную
   amountBookmarks.textContent = myVar;
-});
-}
+})});

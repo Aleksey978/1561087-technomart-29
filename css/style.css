@@ -47,7 +47,7 @@ a {
   text-decoration: none;
   color: var(--basic-white);
   }
-ul li{
+ul, li{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -423,6 +423,7 @@ color: var(--basic-white);
   gap:20px;
   justify-content: center;
   margin: 0;
+  margin-top: 42px;
 }
 .block h3{
   font-size: 24px;
@@ -1074,6 +1075,9 @@ color: var(--basic-white);
   background-color: var(--basic-dark-blue);
   margin-top: 70px;
   }
+  .catalog-footer{
+      background-color: var(--basic-dark-blue);
+  }
 .footer-navigation{
   background-color: var(--basic-blue);
 }
@@ -1114,6 +1118,7 @@ color: var(--basic-white);
   justify-content: space-between;
   font-size: 18px;
   margin-top: 37px;
+  margin-left:40px;
 }
 .footer-nav li:hover{
   text-decoration: underline;
@@ -1127,8 +1132,8 @@ color: var(--basic-white);
   grid-column: 2/3;
   grid-row: 2/3;
   justify-content: space-between;
-  margin-left: 22px;
-  margin-top: 30px;
+  margin-left: 62px;
+  margin-top: 32px;
 }
 .products-footer li{
   display: inline-block;
@@ -1176,7 +1181,7 @@ color: var(--basic-white);
 }
 .footer-social ul{
   margin: 0;
-  margin-left: 7px;
+  margin-left: 44px;
 }
 .social{
   display: flex;
@@ -1365,19 +1370,27 @@ color: #000000;
   /* outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 255, 0.7); */
 }
+.manufacturers-control ul{
+  margin: 0;
+  padding: 0;
+  margin-top: 18px;
+  margin-left: 35px;
+}
 .filter fieldset {
+  display: block;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
   border: none;
 }
 .filter-option label {
+  padding: 0;
+  margin: 0;
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
   font-size: 15px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "PT Sans";
   line-height: 19px;
   text-transform: uppercase;
@@ -1385,8 +1398,8 @@ color: #000000;
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -37px;
-  top: 0;
+  left: -35px;
+  bottom: -2px;
   width: 19px;
   height: 19px;
   border: 2px solid #C5C5C5;
@@ -1395,8 +1408,8 @@ color: #000000;
 .filter-input-checkbox:checked + label::after{
   content: "";
   position: absolute;
-  left: -37px;
-  top: 0;
+  left: -35px;
+  bottom: -2px;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-on.png);
@@ -1406,33 +1419,51 @@ color: #000000;
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -37px;
-  top: 0px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #000000;
+  left: -36px;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  border: 4px solid #000000;
   border-radius: 50px;
   border-color: #C5C5C5;
 }
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 6px;
-  left: -31px;
+  top: 7px;
+  left: -27px;
   width: 8px;
   height: 8px;
   background-color: #C5C5C5;
   border-radius: 50%;
 }
 .filter-input-checkbox:checked + label::before {display: none}
+
 .filter-button{
   display: block;
   cursor: pointer;
   max-width: 220px;
+  max-height: 38px;
   padding: 10px 79px;
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: "PT Sans";
   border: 1px solid #E5E5E5;
   background-color: var(--basic-white);
 }
+.filter-option-radio{
+  margin-top: 26px;
+}
+.filter-option-radio ul{
+  margin-top: 24px;
+  padding-left: 35px;
+}
+.filter-radio{
+  margin-bottom: 22px;
+}
+
 /* Фильтр */
 .filter-item {
   margin: 0;
@@ -1560,9 +1591,8 @@ color: #000000;
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
-
-}
-.manufacturers-control{
+  font-family: inherit;
+  font-size: inherit;
 }
 /* Каталог */
 .catalog-list{
@@ -1574,6 +1604,80 @@ color: #000000;
 .catalog-list .product{
   margin-left: 20px;
   margin-top: 20px;
+}
+/* Pagination */
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 20px;
+  margin-top: 47px;
+}
+
+.pagination-item {
+  margin-right: 9px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-family: "PT Sans";
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pagination-item a:active {
+  border: 1px solid #EE3643;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.pagination-item-next a{
+  text-transform: uppercase;
+  padding-left: 32px;
+  padding-right: 31px;
+}
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border-radius: 3px;
+}
+
+
+
+
+.info-perf{
+  background: #F1F5F7;
+  margin-top: 59px;
+  padding-top: 64px;
+  padding-bottom: 68px;
+}
+.info-perf h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.info-perf p{
+  margin-top: 25px;
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 24px;
+    font-weight: 400;
 }
 /* MODAL */
 
@@ -1632,6 +1736,55 @@ color: #000000;
   margin-top: 100px;
   color: var(--basic-white);
 }
+.modal-buy{
+  /* display: block; */
+  width: 620px;
+  height: 260px;
+  border-top: 7px solid var(--basic-red);
+  box-sizing: border-box;
+}
+.modal-buy h3{
+  align-items: baseline;
+  text-align: center;
+  margin-top: 67px;
+  position: relative;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.modal-buy h3::after{
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/icon-mark.png);
+}
+.modal-buy-button{
+  display: flex;
+  justify-content: center;
+  width: 620px;
+  height: 112px;
+  background: #F1F1F1;
+  margin-top: 66px;
+}
+.continue-shopping{
+  background: white;
+  margin-top:37px;
+  border: 0;
+  cursor: pointer;
+}
+.checkout-button{
+  color: white;
+  margin-top:37px;
+  border: 0;
+  cursor: pointer;
+}
+
+
+
+
 .modal-close{
   position: absolute;
   top: 12px;

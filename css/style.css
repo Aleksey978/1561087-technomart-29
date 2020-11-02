@@ -189,11 +189,15 @@ p, h2{
     opacity: 1;
     fill: #ee3643;
 }
+.bookmarks-box{
+  width: 150px;
+  height: 42px;
+  text-align: center;
+}
 .bookmarks{
-  display: flex;
-  padding: 9px 0px 8px 43px;
-  /* width: 142px; */
-  /* padding-left: 50px; */
+  display: block;
+  margin-top: 10px;
+  margin-left: 19px;
   position: relative;
 }
 .bookmarks::before{
@@ -201,8 +205,8 @@ p, h2{
   position: absolute;
   width: 14px;
   height: 17px;
-  top: 12px;
-  left: 20px;
+  top: 3px;
+  left: 1px;
   line-height: 24px;
   background-image: url("../img/Shape-Bookmarks.svg");
   background-repeat: no-repeat;
@@ -214,21 +218,27 @@ p, h2{
 .bookmarks:hover::before{
     opacity: 1;
 }
-
+.basket-head-box{
+  width: 150px;
+  height: 42px;
+  text-align: center;
+}
 .basket-head{
-  display: flex;
-  padding: 9px 0px 8px 74px ;
-  margin-right: 27px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 22px;
   position: relative;
-
+}
+.header-basket-catalog{
+  background-color: var(--basic-red);
 }
 .basket-head::before{
   content:"";
   position: absolute;
   width: 14px;
   height: 18px;
-  top: 12px;
-  left: 51px;
+  top: 3px;
+  left: 5px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;

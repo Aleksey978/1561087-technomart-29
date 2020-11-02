@@ -18,12 +18,16 @@
               <input type="text" id="header-search" placeholder="Поиск:">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
             </form>
-        <a class="bookmarks" href="#">Закладки:
-           <span class="amount-bookmarks">0</span>
-        </a>
-        <a class="basket-head" href="#">Корзина:
-           <span class="amount-basket">0</span>
-         </a>
+        <div class="bookmarks-box">
+          <a class="bookmarks" href="#">Закладки:
+             <span class="amount-bookmarks">0</span>
+          </a>
+        </div>
+        <div class="basket-head-box">
+          <a class="basket-head" href="#">Корзина:
+             <span class="amount-basket">0</span>
+           </a>
+        </div>
       <a class="order"href="#">Оформить заказ</a>
     </div>
   </section>
@@ -62,31 +66,31 @@
     <section class="main-content">
       <div class="block materials">
         <h3>Материалы</h3><a href="blank.html">на любой вкус</a>
-        <img class="basket" src="img/icon-1.png" alt="basket">
+        <img class="basket" src="img/icon-1.png" alt="">
         <div class="corner-ribbon">new</div>
       </div>
       <div class="block instrument">
         <h3>Инструмент</h3>
           <a href="blank.html">на все случаи</a>
-          <img class="drill" src="img/icon-2.png" alt="drill">
+          <img class="drill" src="img/icon-2.png" alt="">
       </div>
       <div class="block Technics">
         <h3>Техника</h3><a href="blank.html">для стройки</a>
-        <img class="tract" src="img/icon-3.png" alt="tract">
+        <img class="tract" src="img/icon-3.png" alt="">
       </div>
       <div class="block discounts">
         <h3>Скидки 50%</h3><a href="blank.html">на 350 товаров</a>
-        <img class="shopping-cart" src="img/icon-4.png" alt="shopping-cart">
+        <img class="shopping-cart" src="img/icon-4.png" alt="">
       </div>
       <div class="block delivery-main">
         <h3>Доставка</h3><a href="blank.html">бесплатно</a>
-          <img class="bus" src="img/icon-5.png" alt="bus">
+          <img class="bus" src="img/icon-5.png" alt="">
       </div>
       <div class="catalog">
     <div class="catalog-carousel">
   <div class="catalog-item perf">
     <div class="catalog-img">
-<img src="img/perf-slide.jpg" alt="">
+<img src="img/perf-slide.jpg" alt="перфораторы">
     </div>
     <div class="catalog-title">
     <h2>перфораторы</h2>
@@ -100,7 +104,7 @@
   </div>
   <div class="catalog-item drill-slide">
     <div class="catalog-img">
-<img src="img/Layer 99.jpg" alt="">
+<img src="img/Layer 99.jpg" alt="дрели">
     </div>
     <div class="catalog-title">
       <h2>Дрели</h2>
@@ -132,7 +136,7 @@
       </div>
           <div class="product">
             <div class="item-img">
-              <img src="img/BFG 9000.png" width="184" height="164" alt="BFG 9000">
+              <img src="img/BFG 9000.png" width="184" height="164" alt="перфоратор bfg 9000">
               <div class="actions">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -146,7 +150,7 @@
           </div>
             <div class="b3000 product">
               <div class="item-img">
-                <img  src="img/BFG 3000.png" width="127" height="112" alt="BFG 9000">
+                <img  src="img/BFG 3000.png" width="127" height="112" alt="перфоратор bfg 3000">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
                   <a class="bookmark" href="#">В закладки</a>
@@ -161,7 +165,7 @@
             </div>
           <div class="b6000 product">
             <div class="item-img">
-              <img src="img/BFG 6000.png" width="144" height="128" alt="BFG 6000">
+              <img src="img/BFG 6000.png" width="144" height="128" alt="перфоратор bfg 6000">
               <div class="actions">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -175,7 +179,7 @@
           </div>
           <div class="b2000 product">
             <div class="item-img">
-              <img src="img/BFG 2000.png" width="127" height="112" alt="BFG 2000">
+              <img src="img/BFG 2000.png" width="127" height="112" alt="перфоратор bfg 2000">
               <div class="actions">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -213,7 +217,7 @@
           </div>
           <ul class="nav-service">
             <li><button class="nav-section delivery-btn nav-section-active" type="button">Доставка</button></li>
-            <li><button class="nav-section Warranty-btn" type="button">Гарантия</button></li>
+            <li><button class="nav-section warranty-btn" type="button">Гарантия</button></li>
             <li><button class="nav-section credit-btn" type="button">Кредит</button></li>
           </ul>
       <div class="delivery slide-show slide">
@@ -353,9 +357,6 @@
     </div>
     <button class="modal-close" aria-label="Закрыть" type="button"></button>
   </section>
-  <script src="js/login.js"></script>
-  <script src="js/proba.js"></script>
-  <script src="js/buy.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

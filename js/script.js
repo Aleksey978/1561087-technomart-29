@@ -25,10 +25,12 @@ const slide1 = document.querySelector(".delivery");
 const slide2 = document.querySelector(".Warranty");
 const slide3 = document.querySelector(".credit");
 
-come.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  loginPopup.classList.add("modal-show");
-});
+if(come) {
+  come.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    loginPopup.classList.add("modal-show");
+  });
+}
 loginClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   loginPopup.classList.remove("modal-show");
@@ -70,28 +72,30 @@ mapClose.addEventListener("click", function (evt) {
 
 
 
-linkCatalog.forEach(function (item) {
-   	item.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		popupCatalog.classList.add("modal-show");
-		addCart.classList.add("header-basket-catalog");
-		myVar++;
-		amountBascet.textContent = myVar;
-	});
-	close.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		popupCatalog.classList.remove("modal-show");
+if (linkCatalog) {
+  linkCatalog.forEach(function (item) {
+     	item.addEventListener("click", function (evt) {
+  		evt.preventDefault();
+  		popupCatalog.classList.add("modal-show");
+  		addCart.classList.add("header-basket-catalog");
+  		myVar++;
+  		amountBascet.textContent = myVar;
+  	});
+  	close.addEventListener("click", function (evt) {
+  		evt.preventDefault();
+  		popupCatalog.classList.remove("modal-show");
 
-	});
-	window.addEventListener("keydown", function (evt) {
-		if (evt.keyCode === 27) {
-			evt.preventDefault();
-			if (popupCatalog.classList.add("visually-hidden")) {
-				popupCatalog.classList.remove("visually-hidden");
-			}
-		}
-	});
-});
+  	});
+  	window.addEventListener("keydown", function (evt) {
+  		if (evt.keyCode === 27) {
+  			evt.preventDefault();
+  			if (popupCatalog.classList.add("visually-hidden")) {
+  				popupCatalog.classList.remove("visually-hidden");
+  			}
+  		}
+  	});
+  });
+}
   linkBookmark.forEach (function (item) {
   item.addEventListener("click", function (evt) {
   evt.preventDefault();

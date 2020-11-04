@@ -14,7 +14,6 @@
       <div class="main-container header-row-nav">
           <a class="main-button" href="index.html">Техномарт</a>
           <form class="header-search-form" action="http://echo.htmlacademy.ru/">
-                <!-- <label for="header-search">Поиск:</label> -->
                 <input type="text" id="header-search" placeholder="Поиск:">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
               </form>
@@ -43,7 +42,11 @@
           </ul>
         </div>
     <div class="user-login">
-        <a class="user-name" href="#">Равшан Джамшутович</a>
+      <ul class="user-navigation">
+        <li><a class="user" href="#"></a></li>
+        <li><a class="user-name" href="#">Равшан Джамшутович</a></li>
+        <li><a class="exit" href="#"></a></li>
+      </ul>
         <ul class="user-menu">
           <li><a href="#">Мои заказы</a></li>
           <li><a href="#">Личный кабинет</a></li>
@@ -159,20 +162,17 @@
           <div class="filter-items">
             <p>сортировка:</p>
               <ul class="filter-links">
-                <li><a class="by-price" href="#">по цене</a></li>
+                <li><a class="type-functional filter-links-active" href="#">по цене</a></li>
                 <li><a class="type-functional" href="#">по типу</a></li>
                 <li><a class="type-functional" href="#">по функционалу</a></li>
               </ul>
             <div class="filter-buttons">
-              <button class="sorting-button" type="button" name="button"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5.5 0L11 10L0 10" fill="#EE3643"/>
-    </svg>
-    </button>
-              <button class="sorting-button sorting-button-disabled" type="button" name="button"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="sorting-button" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5.5 0L11 10L0 10" fill="#EE3643"/>
+  </svg></a>
+              <a class="sorting-button sorting-button-disabled" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
-  </svg>
-
-    </button>
+  </svg></a>
             </div>
           </div>
           <h2 class="visually-hidden">Список товаров</h2>
@@ -322,7 +322,7 @@
     </div>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="catalog-footer">
     <div class="footer-navigation">
       <section class="footer-nav main-container">
       <a class="footer-button" href="#">ТЕХНОМАРТ</a>
@@ -333,7 +333,7 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55</p>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  +7 (812) 555-05-55</p>
         <ul class="products-footer">
           <li><a class="products" href="#">Материалы</a></li>
           <li><a class="products" href="#">Техника</a></li>
@@ -343,7 +343,7 @@
       </section>
     </div>
     <section class="footer-info main-container">
-      <p>© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
+      <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
     <div class="footer-social">
     <ul class="social">
       <li>
@@ -366,8 +366,8 @@
       </li>
     </ul>
   </div>
-      <div class="Feedback-developed">
-        <div class="Feedback">
+      <div class="feedback-developed">
+        <div class="feedback">
           <p>Обратная связь</p>
           <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>

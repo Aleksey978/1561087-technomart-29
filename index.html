@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="css/normalize.css">
  <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +15,9 @@
         <form class="header-search-form" action="http://echo.htmlacademy.ru/">
               <label class="visually-hidden" for="header-search">Поиск</label>
               <input type="text" id="header-search" placeholder="Поиск:">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+              </svg>
             </form>
         <div class="bookmarks-box">
           <a class="bookmarks" href="#">Закладки:
@@ -38,7 +39,7 @@
     </div>
       <div class="address-block">
         <ul class="phone-address">
-          <li ><a class="phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></li>
+          <li ><a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a></li>
           <li class="address-head">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
         </ul>
       </div>
@@ -64,33 +65,32 @@
 </header>
 <main>
     <section class="main-content">
-      <div class="block materials">
+      <div class="block materials corner-ribbon">
         <h3>Материалы</h3><a href="blank.html">на любой вкус</a>
-        <img class="basket" src="img/icon-1.png" width="44px" height="65px">
-        <div class="corner-ribbon">new</div>
+        <!-- <img class="basket" src="img/icon-1.png" alt="банка с краской" width="44" height="65"> -->
       </div>
       <div class="block instrument">
         <h3>Инструмент</h3>
           <a href="blank.html">на все случаи</a>
-          <img class="drill" src="img/icon-2.png" width="75px" height="61px">
+          <!-- <img class="drill" src="img/icon-2.png" alt="дрель" width="75" height="61"> -->
       </div>
-      <div class="block Technics">
+      <div class="block technics">
         <h3>Техника</h3><a href="blank.html">для стройки</a>
-        <img class="tract" src="img/icon-3.png" width="78px" height="62px">
+        <!-- <img class="tract" src="img/icon-3.png" width="78" height="62"> -->
       </div>
       <div class="block discounts">
         <h3>Скидки 50%</h3><a href="blank.html">на 350 товаров</a>
-        <img class="shopping-cart" src="img/icon-4.png" width="59px" height="73px">
+        <!-- <img class="shopping-cart" src="img/icon-4.png" width="59" height="73"> -->
       </div>
       <div class="block delivery-main">
         <h3>Доставка</h3><a href="blank.html">бесплатно</a>
-          <img class="bus" src="img/icon-5.png" width="78px" height="63px">
+          <!-- <img class="bus" src="img/icon-5.png" width="78" height="63"> -->
       </div>
       <div class="catalog">
     <div class="catalog-carousel">
   <div class="catalog-item perf">
     <div class="catalog-img">
-     <img src="img/perf-slide.jpg" alt="перфораторы" width="620px" height="266px">
+     <img src="img/perf-slide.jpg" alt="рабочий с перфоратором" width="620" height="266">
     </div>
     <div class="catalog-title">
     <h2>перфораторы</h2>
@@ -104,7 +104,7 @@
   </div>
   <div class="catalog-item drill-slide">
     <div class="catalog-img">
-     <img src="img/layer99.jpg" alt="дрели" width="620px" height="266px">
+     <img src="img/layer99.jpg" alt="рабочий с дрелью" width="620" height="266">
     </div>
     <div class="catalog-title">
       <h2>Дрели</h2>
@@ -118,9 +118,9 @@
 <div class="catalog-navigation">
   <div class="catalog-arrows">
     <button class="catalog-arrow catalog-prev">
-      <img src="img/btn-prev.svg" alt="первый слайд" width="21px" height="39px"></button>
+      <img src="img/btn-prev.svg" alt="первый слайд" width="21" height="39"></button>
     <button class="catalog-arrow catalog-next">
-      <img src="img/btn-prev.svg" alt="второй слайд" width="21px" height="39px"></button>
+      <img src="img/btn-prev.svg" alt="второй слайд" width="21" height="39"></button>
   </div>
 </div>
 <div class="catalog-dots">
@@ -136,7 +136,7 @@
       </div>
           <div class="product">
             <div class="item-img">
-              <img src="img/bfg9000.png" width="184" height="164" alt="перфоратор bfg 9000">
+              <img src="img/bfg9000.jpg" width="184" height="164" alt="перфоратор bfg 9000">
               <div class="actions">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -148,14 +148,13 @@
             <button class="button" type="button">25500 P.</button>
           </div>
           </div>
-            <div class="b3000 product">
+            <div class="b3000 product corner-ribbon">
               <div class="item-img">
-                <img  src="img/bfg3000.png" width="127" height="112" alt="перфоратор bfg 3000">
+                <img  src="img/bfg3000.jpg" width="127" height="112" alt="перфоратор bfg 3000">
                 <div class="actions">
                   <a class="buy" href="#">Купить</a>
                   <a class="bookmark" href="#">В закладки</a>
                 </div>
-                <div class="corner-ribbon">new</div>
               </div>
             <div class="description">
               <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -165,7 +164,7 @@
             </div>
           <div class="b6000 product">
             <div class="item-img">
-              <img src="img/bfg6000.png" width="144" height="128" alt="перфоратор bfg 6000">
+              <img src="img/bfg6000.jpg" width="144" height="128" alt="перфоратор bfg 6000">
               <div class="actions">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -177,15 +176,14 @@
             <button class="button" type="button">25500 P.</button>
             </div>
           </div>
-          <div class="b2000 product">
+          <div class="b2000 product corner-ribbon">
             <div class="item-img">
-              <img src="img/bfg2000.png" width="127" height="112" alt="перфоратор bfg 2000">
+              <img src="img/bfg2000.jpg" width="127" height="112" alt="перфоратор bfg 2000">
               <div class="actions">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
               </div>
             </div>
-            <div class="corner-ribbon">new</div>
             <div class="description">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <button class="button button-2000" type="button">12500 P.</button>
@@ -198,14 +196,14 @@
     <a class="button-popular-goods button-manufacturers" href="#">все производители</a>
   </section>
   <section class="manufacturers">
-    <a href="#"><img src="img/bosch.png" alt="bosch" width="220px" height="145px"></a>
-    <a href="#"><img src="img/makita.png"  alt="makita" width="123px" height="40px"></a>
-    <a href="#"><img src="img/dewalt.png" alt="dewalt" width="146px" height="44px"></a>
-    <a href="#"><img src="img/intersckol.png"  alt="интерскол" width="200px" height="75px"></a>
-    <a href="#"><img src="img/hitachi.png"  alt="hitachi" width="169px" height="31px"></a>
-    <a href="#"><img src="img/lg.png"  alt="lg" width="121px" height="73px"></a>
-    <a href="#"><img src="img/aeg.png"  alt="aeg" width="151px" height="96px"></a>
-    <a href="#"><img src="img/metabo.png"  alt="metabo" width="204px" height="69px"></a>
+    <a href="#"><img src="img/bosch.png" alt="bosch" width="220" height="145"></a>
+    <a href="#"><img src="img/makita.png"  alt="makita" width="123" height="40"></a>
+    <a href="#"><img src="img/dewalt.png" alt="dewalt" width="146" height="44"></a>
+    <a href="#"><img src="img/intersckol.png"  alt="интерскол" width="200" height="75"></a>
+    <a href="#"><img src="img/hitachi.png"  alt="hitachi" width="169" height="31"></a>
+    <a href="#"><img src="img/lg.png"  alt="lg" width="121" height="73"></a>
+    <a href="#"><img src="img/aeg.png"  alt="aeg" width="151" height="96"></a>
+    <a href="#"><img src="img/metabo.png"  alt="metabo" width="204" height="69"></a>
   </section>
 </div>
   <section class="service-delivery-block">
@@ -226,7 +224,7 @@
           к вашему подъезду совершенно бесплатно!
           Ведь мы неплохо заработаем,<br>
           поднимая его на ваш этаж!</p>
-          <img class="service-img" src="img/car.png" width="468px" height="261px">
+
       </div>
       <div class="warranty slide">
         <h3>Гарантия</h3>
@@ -235,7 +233,7 @@
             возгоранием,  вы всегда можете быть уверены в нашей
              гарантии. Мы обменяем сгоревший товар на новый.
              Дом уж восстановите как-нибудь сами.</p>
-          <img class="service-img" src="img/medal.png" width="389px" height="283px">
+          <!-- <img class="service-img" src="img/medal.png" alt="медаль 100%" width="389" height="283"> -->
       </div>
       <div class="credit slide">
         <h3>Кредит</h3>
@@ -243,7 +241,7 @@
            Кредитные консультанты придут вам на помощь.
         </p>
         <a href="#" class="credit-button">отправить заявку</a>
-          <img class="service-img" src="img/credit-img.png" width="465px" height="285px">
+          <!-- <img class="service-img" src="img/credit-img.png" alt="" width="465" height="285"> -->
       </div>
     </div>
   </section>

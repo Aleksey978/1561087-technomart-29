@@ -141,14 +141,12 @@ p, h2{
 .header-search-form input::placeholder {
     color: var(--basic-white);
 }
-
 .header-search-form svg {
     position: absolute;
     top: 19px;
     left: 17px;
     margin-top: -7px;
 }
-
 .header-search-form path {
     opacity: 0.3;
     fill: var(--basic-white);
@@ -589,10 +587,10 @@ color: var(--basic-white);
   background: #EE3643;
   color: var(--basic-white);
 }
-.button-catalog:hover{
+.button-changes:hover{
   background-color: #CA2C37;
 }
-.button-catalog:active{
+.button-changes:active{
   background-color: #BA2732;;
 }
 .catalog-navigation{
@@ -650,6 +648,7 @@ color: var(--basic-white);
   margin-left: 14px;
   text-transform: uppercase;
 }
+
 .product-list-open{
   display: grid;
   grid-column: 1/5;
@@ -826,9 +825,6 @@ color: var(--basic-white);
     height: 145px;
     align-items: center;
     justify-content: center;
-}
-.button-manufacturers{
-  margin-left: 9px;
 }
 .manufacturers a:hover{
   box-shadow: 0px 0px 15px 0px #d1d1d1;
@@ -1184,7 +1180,9 @@ color: var(--basic-white);
   height: 68px;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
-
+.footer-button:focus{
+    background-color: var(--basic-dark-red);
+}
 .footer-nav-item{
   grid-column: 2/4;
   grid-row: 1/2;
